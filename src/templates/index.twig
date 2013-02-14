@@ -1,0 +1,14 @@
+{% include 'header.twig' %}
+
+<p><a href="{{ app.request.baseUrl ~ '/add' }}" class="btn"><b class="icon-plus-sign"></b> Add a Photo</a></p>
+
+<div class="row-fluid">
+    {%  for image in images %}
+        <div class="uploaded-image">
+            <img src="{{ image.url }}" class="img-polaroid">
+            <p class="caption">{{ image.caption }}</p>
+        </div>
+    {%  endfor %}
+</div>
+
+{% include 'footer.twig' %}

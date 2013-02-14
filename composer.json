@@ -1,0 +1,9 @@
+{
+    "require": {
+        "aws/aws-sdk-php-silex": "~1.0.1",
+        "aws/aws-sdk-php": "2.1.*",
+        "silex/silex": "dev-master",
+        "twig/twig": ">=1.8,<2.0-dev"
+    },
+    "minimum-stability": "dev"
+}
